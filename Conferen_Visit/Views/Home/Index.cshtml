@@ -10,7 +10,10 @@
     <title>Index</title>
     <link rel="stylesheet" href="~/Content/bootstrap.css" />
     <link rel="stylesheet" href="~/Content/bootstrap-theme.css" />
-    <style>
+    <link rel="stylesheet" href="~/Content/Style.css"/>
+    <link rel="stylesheet" href="~/Content/main.css" />
+
+    @*<style>
         .bin a {
             color: white;
             text-decoration: none;
@@ -19,17 +22,97 @@
         body {
             background-color: #f1f1f1;
         }
-    </style>
+    </style>*@
 </head>
 <body>
-    <div class="text-center">
-        @ViewBag.Greeting (with view)
-        <h2>We're going to an exciting party</h2>
-        <h3>And you are invites to only fill out the form</h3>
-        <br />
-        <div class="btn btn-success">
-            @Html.ActionLink("Form RSVP", "RsvpForm")
+    <nav class="navbar navbar-expand-lg fixed-top ">
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mr-4">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Post</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Contact</a>
+                </li>
+            </ul>
+
         </div>
+    </nav>
+
+    <div class="description text-center">
+        @ViewBag.Greeting (with view)
+        <h2 style="margin-top:35px">Webinar “ASP.NET MVC 5”</h2>
+        <h5>
+            Відбудеться
+            14 травня (четвер)
+        </h5>
+        <h5>
+            Час
+            18:30 — 20:30
+        </h5>
+        <h5>
+            Місце
+            Online
+        </h5>
+        <h5>
+            Вартість
+            безкоштовно
+        </h5>        
+            <div>
+                <p>
+                    Ви .NET розробник із&nbsp;досвідом і&nbsp;прагнете завжди бути на&nbsp;хвилі трендів?
+                    Запрошуємо на&nbsp;першу онлайн зустріч .NET спільноти SSA Group. Під час вебінару
+                    пропонуємо обговорити актуальні питання щодо підвищення якості коду за&nbsp;допомогою SonarQube, а&nbsp;саме:
+                </p>
+                
+                <button class="btn btn-outline-secondary" style="color:white; text-decoration-color:white; background-color:#F97300">
+                    @Html.ActionLink("Піду", "RsvpForm")
+                </button>
+
+
+                <p>
+                    ● Огляд та історію створення SonarQube<br />
+                    ● Управління доступом, аутентифікація та авторизація (AD)<br />
+                    ● Як створити проект на SonarQube<br />
+                    ● Основні показники: Security, Reliability, Maintainability та Code duplication<br />
+                    ● Автоматичний запуск аналізу через Azure DevOps<br />
+                    ● Як SonarQube допомогає проекту та команді<br />
+                    ● Альтернативи для SonarQube<br />
+                </p>
+
+                <p>
+                    Спікери:<br />
+                    ● Дмитро Оболоник — Head of Backend .Net Europe Department<br />
+                    ● Володимир Удалов — Head of Backend .Net USA Department<br />
+                    ● Євген Анцибор — Head of Data&Desktop Department<br />
+                    <br />
+                    Подія проводитиметься в Online форматі (віддалено)<br />
+                    Мова доповідей — російська<br />
+                </p>
+
+
+                Реєстрація безкоштовна, але обов’язкова
+            </div>
+        
+        <br />
+        <button class="btn btn-warning" style="color:white; text-decoration-color:white; background-color:#F97300">
+            @Html.ActionLink("Программа конференції", "Program")
+        </button>
+
     </div>
 
 </body>
