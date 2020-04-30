@@ -23,19 +23,15 @@ namespace Conferen_Visit.Controllers
             return View();
         }
 
-        public ViewResult Program()
-        {
-            return View();
-        }
+        //[HttpPost]
+        //public ViewResult RsvpForm(GuestResponse guest)
+        //{
+        //        return View("Thanks", guest);
+        //}
 
-        [HttpPost]
-        public ViewResult RsvpForm(GuestResponse guest)
+        public ViewResult Create()
         {
-            if (ModelState.IsValid)
-                return View("Thanks", guest);
-
-            else
-                return View();
+            return View("Thanks", new GuestResponse());
         }
     }
 }
