@@ -33,5 +33,11 @@ namespace Conferen_Visit.Controllers
         {
             return View("Thanks", new GuestResponse());
         }
+
+        public ViewResult Program()
+        {
+            return View();
+        }
+
     }
 }
