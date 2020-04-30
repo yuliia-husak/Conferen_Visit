@@ -1,5 +1,6 @@
 ﻿body {
-    background-color: beige;
+    background-color: beige;    
+    margin:20px;
 }
 
 .field-validation-error {
@@ -23,3 +24,4 @@
 .validation-summary-valid {
     display: none;
 }
+

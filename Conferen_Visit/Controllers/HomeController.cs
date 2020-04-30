@@ -23,6 +23,11 @@ namespace Conferen_Visit.Controllers
             return View();
         }
 
+        public ViewResult Program()
+        {
+            return View();
+        }
+
         [HttpPost]
         public ViewResult RsvpForm(GuestResponse guest)
         {
